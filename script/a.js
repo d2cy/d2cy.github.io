@@ -155,7 +155,7 @@ function getEdu(){
              </div>
         </article>
         <article>
-         <img src="./images/bit.jpg" width="200" height="200" alt="BIT">
+         <img src="https://raw.githubusercontent.com/d2cy/d2cy.github.io/main/images/bit.jpg" width="200" height="200" alt="BIT">
          <div class="text">
               <h3>BIT ,DURG</h3>
               <p>I have completed my BTech from BIT Durg in year 2021</p>
