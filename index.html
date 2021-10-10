@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css" />
-    <script src="./a.js"></script>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/nav.css" />
+    <script src="./script/a.js"></script>
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
@@ -52,19 +53,36 @@
     </style>
 
 </head>
-<body>
+<body onload="onLoad()">
     <nav class="navbar">
         <div class="max-width">
-            <ul class="menu">
-                <li onclick="getHome()"><a href="#" class="menu-btn" >Home</a></li>
-                <li onclick="getAbout()"><a href="#about" class="menu-btn" >About</a></li>
-                <li onclick="getEdu()"><a href="#education" class="menu-btn" >Education</a></li>
-                <li onclick="getSkills()"><a href="#skills" class="menu-btn" >Skills</a></li>
-                <li onclick="getContact()"><a href="#contact" class="menu-btn" >Contact</a></li>
+           
+            <ul class="nav-menu" id="myTopnav">
+                <li class="nav-item" onclick="getHome()">
+                    <a href ="#Home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item" onclick="getAbout()">
+                    <a href="#about"  class="nav-link">About</a>
+                </li>
+                <li class="nav-item" onclick="getEdu()">
+                    <a href="#education"  class="nav-link">Education</a>
+                </li>
+                <li class="nav-item" onclick="getSkills()">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item" onclick="getContact()">
+                    <a href="#contact"  class="nav-link">Contact</a>
+                </li>    
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
 
     </nav>
+    
     <!--
         Home
     -->
@@ -82,10 +100,20 @@
                 <a href="https://www.linkedin.com/in/devanshdoshi4100/"  target="_blank"><span class="iconify" data-icon="entypo-social:linkedin-with-circle" style="color: blue;" data-width="24" data-height="24"></span></a>
             </div>
         </div>
+       
     </section>
+    
+    
 </div>
 
+<footer class="footer">
+    
+    <div class="time-container">
+        <div id="time">
 
+        </div>
+    </div>
+</footer>
 
 <!--  Contact PAge
 <section class="contact" id="contact">
@@ -215,5 +243,8 @@
 </section>
 -->
 
+
+
 </body>
+<script src="./script/main.js"></script>
 </html>
